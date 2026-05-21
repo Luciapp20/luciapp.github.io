@@ -37,6 +37,7 @@ Inside this repository, you can find the complete engineering breakdown of the s
 
 ---
 [![Robots](assets/images/robots2.png)](assets/images/robots2.png)
+
 [![Watch the video](https://img.shields.io/badge/YouTube-Watch%20Video-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/iAL3DPVJlok)
 
 ### 3. "Through the Door" - AR Measurement App
