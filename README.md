@@ -29,7 +29,6 @@ The system computation graph below showcases the nodes, topics, and multi-robot 
 <a href="assets/images/Rqt_graph.png" target="_blank">
   <img src="assets/images/Rqt_graph.png" width="450" alt="Robots">
 </a>
----
 
 #### **Project Documentation & Media**
 Inside this repository, you can find the complete engineering breakdown of the setup, namespacing logic, and ROS2 node coordination:
@@ -37,10 +36,10 @@ Inside this repository, you can find the complete engineering breakdown of the s
 [![View Technical Report](https://img.shields.io/badge/Documentation-View%20Full%20PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](assets/documents/DOCUMENTO_TECNICO_ROM.pdf)
 
 <br>
+
 <a href="assets/images/robots2.png" target="_blank">
   <img src="assets/images/robots2.png" width="450" alt="Robots">
 </a>
-
 
 [![Watch the video](https://img.shields.io/badge/YouTube-Watch%20Video-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/iAL3DPVJlok)
 
