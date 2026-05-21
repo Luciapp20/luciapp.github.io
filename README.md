@@ -32,8 +32,6 @@ The system computation graph below showcases the nodes, topics, and multi-robot 
 
 #### **Project Documentation & Media**
 
-<br>
-
 Inside this repository, you can find the complete engineering breakdown of the setup, namespacing logic, and ROS2 node coordination:
 
 [![View Technical Report](https://img.shields.io/badge/Documentation-View%20Full%20PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](assets/documents/DOCUMENTO_TECNICO_ROM.pdf)
