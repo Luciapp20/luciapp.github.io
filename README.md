@@ -26,8 +26,7 @@ Developed and simulated a cooperative relay race between two autonomous mobile r
 #### **System Architecture Graph (rqt_graph)**
 The system computation graph below showcases the nodes, topics, and multi-robot communication pipeline designed for this synchronization task:
 
-![System Architecture](https://github.com/user-attachments/assets/1c35f6dc-8be6-46e0-a74c-d07d63939583)
-
+![System Architecture](assets/images/rqt_graph.png)
 
 El contenido generado por IA puede ser incorrecto.
 #### **Project Media**
