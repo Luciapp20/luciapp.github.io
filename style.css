@@ -1,1 +1,228 @@
 
+/* VARIABLES DE COLOR (Estilo tecnológico oscuro) */
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #e2e8f0;
+    --text-muted: #94a3b8;
+    --accent-color: #38bdf8;
+    --accent-hover: #0ea5e9;
+    --secondary-color: #475569;
+    --border-color: #334155;
+}
+
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* CABECERA (HERO) */
+header {
+    background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+    border-bottom: 1px solid var(--border-color);
+    padding: 4rem 0;
+}
+
+.hero-container h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.hero-container h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.location {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.location i {
+    margin-right: 5px;
+    color: #ef4444;
+}
+
+.bio {
+    font-size: 1.1rem;
+    max-width: 700px;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color);
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+    margin-right: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #334155;
+}
+
+/* SECCIONES Y TARJETAS */
+.section-title {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    color: #fff;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-content h4 {
+    font-size: 1.35rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.project-content h5 {
+    font-size: 1.05rem;
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-content p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.project-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-content li {
+    margin-bottom: 0.5rem;
+}
+
+code {
+    background-color: #0f172a;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f43f5e;
+    font-size: 0.9rem;
+}
+
+/* TAGS DE TECNOLOGÍAS */
+.tech-tags {
+    margin-bottom: 1rem;
+}
+
+.tech-tags span {
+    display: inline-block;
+    background-color: #0f172a;
+    color: var(--accent-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+/* CONTENEDOR DE IMÁGENES */
+.rqt-graph-container {
+    background-color: #0f172a;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* HABILIDADES */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.skill-category h5 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 4rem;
+}
+
+/* RESPONSIVE (Móviles) */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-container h1 {
+        font-size: 2.2rem;
+    }
+}
