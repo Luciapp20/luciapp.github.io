@@ -32,6 +32,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
 /* =========================
@@ -76,7 +77,7 @@ body {
 }
 
 /* =========================
-   HERO
+   HERO & PROFILE
 ========================= */
 
 header {
@@ -138,6 +139,38 @@ header {
 }
 
 /* =========================
+   SUBMENU (FILTERS)
+========================= */
+
+.project-submenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.submenu-btn {
+    background-color: #0f172a;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.25s ease;
+}
+
+.submenu-btn:hover,
+.submenu-btn.active {
+    background-color: var(--accent-color);
+    color: #0f172a;
+    border-color: var(--accent-color);
+}
+
+/* =========================
    BUTTONS
 ========================= */
 
@@ -179,15 +212,19 @@ header {
 .section-title {
     font-size: 2rem;
     margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding-bottom: 0.7rem;
-    border-bottom: 2px solid var(--border-color);
     color: white;
 }
 
 /* =========================
-   PROJECT CARDS
+   PROJECT CARDS & GRID
 ========================= */
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+}
 
 .project-card {
     background-color: var(--card-bg);
@@ -195,7 +232,7 @@ header {
     border-radius: 12px;
     padding: 2rem;
     margin-bottom: 2rem;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.3s ease;
 }
 
 .project-card:hover {
@@ -254,7 +291,7 @@ code {
     background-color: #0f172a;
     border: 1px solid var(--border-color);
     color: var(--accent-color);
-    padding: 0.35rem 0.7()rem;
+    padding: 0.35rem 0.7rem;
     border-radius: 6px;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
@@ -309,7 +346,7 @@ code {
 }
 
 /* =========================
-   SKILLS
+   SKILLS GRID
 ========================= */
 
 .skills-grid {
@@ -346,6 +383,30 @@ code {
     border-radius: 6px;
     border: 1px solid var(--border-color);
     font-size: 0.9rem;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-card {
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* =========================
@@ -387,12 +448,16 @@ footer {
         gap: 1rem;
     }
 
+    .project-submenu {
+        justify-content: center;
+    }
+
     .contact-links {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-    
+
     .contact-links .btn {
         width: 100%;
         text-align: center;
